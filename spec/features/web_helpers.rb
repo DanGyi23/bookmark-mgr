@@ -7,7 +7,7 @@ end
 
 def add_db_rows
   conn = PG.connect( dbname: 'bookmark_manager_test' )
-  conn.exec( "INSERT INTO bookmarks VALUES(1, 'http://www.makersacademy.com')" )
-  conn.exec( "INSERT INTO bookmarks VALUES(2, 'http://www.google.com')" )
-  conn.exec( "INSERT INTO bookmarks VALUES(3, 'http://www.bbc.co.uk/sport')" )
+  conn.exec( "INSERT INTO bookmarks (url) VALUES('http://www.makersacademy.com')" )
+  conn.exec( "INSERT INTO bookmarks (url) VALUES('http://www.google.com')" )
+  conn.exec( "INSERT INTO bookmarks (url) VALUES('http://www.bbc.co.uk/sport')" )
 end

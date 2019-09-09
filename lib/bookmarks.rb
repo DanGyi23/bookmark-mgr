@@ -11,4 +11,13 @@ require 'pg'
       result.map{ |bookmark| bookmark['url'] }
     end
   end
+
+  def self.add(website)
+    if ENV['ENVIRONMENT'] == 'test'
+      conn = PG.connect( dbname: 'bookmark_manager_test' )
+    else
+      conn = PG.connect( dbname: 'bookmark_manager' )
+    end
+    conn.exec("INSERT INTO bookmarks (url) VALUES ('#{website}')")
+  end
 end

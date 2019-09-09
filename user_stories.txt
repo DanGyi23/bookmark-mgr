@@ -3,3 +3,9 @@
 As a user,
 So I can see my bookmarks
 I want to be able to show a list of my bookmarks
+
+2. Add a new bookmark
+
+As a user,
+So I can store a url
+I want to add a bookmark to my bookmark manager
