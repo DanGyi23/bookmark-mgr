@@ -1,0 +1,5 @@
+1. Show a list of bookmarks
+
+As a user,
+So I can see my bookmarks
+I want to be able to show a list of my bookmarks
