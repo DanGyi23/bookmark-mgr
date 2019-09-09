@@ -8,7 +8,7 @@ feature 'Viewing Bookmarks' do
   scenario 'visit bookmarks page & view bookmarks' do
     visit '/'
     click_button 'View Bookmarks'
-    expect(page).to have_content('Bookmarks List')
+    expect(page).to have_content('Your Bookmarks')
   end
 
 end
