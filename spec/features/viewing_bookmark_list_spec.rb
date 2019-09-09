@@ -1,9 +1,4 @@
 feature 'Viewing Bookmarks' do
-  
-  scenario 'visit index page' do
-    visit '/'
-    expect(page).to have_content("Bookmark Manager")
-  end
 
   scenario 'visit bookmarks page' do
     visit '/'
