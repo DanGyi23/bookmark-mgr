@@ -10,4 +10,4 @@ I want to be able to show a list of my bookmarks
 
 #### Domain Models
 
-![](Domain Models/domain_model1.png)
+![](https://github.com/DanGyi23/bookmark-mgr/blob/master/Domain%20Models/domain_model1.png)
