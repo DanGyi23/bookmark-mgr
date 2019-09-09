@@ -1,5 +1,7 @@
 class Bookmarks
-  def initialize
-    @bookmarks = ["Google.com", "Netflix.com", "Amazon.com"]
+
+  def self.all
+    ["Google.com", "Netflix.com", "Amazon.com"]
   end
+
 end

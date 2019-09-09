@@ -2,6 +2,6 @@ require 'bookmarks'
 
 describe Bookmarks do
   it 'initializes with an array of bookmarks' do
-    expect(subject.bookmarks.all).to eq("Google.com\nNetflix.com\nAmazon.com")
+    expect(Bookmarks.all).to eq(["Google.com", "Netflix.com", "Amazon.com"])
   end
 end
