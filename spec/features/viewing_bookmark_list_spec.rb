@@ -1,3 +1,5 @@
+require_relative 'web_helpers'
+
 feature 'Viewing Bookmarks' do
 
   scenario 'visit bookmarks page' do
