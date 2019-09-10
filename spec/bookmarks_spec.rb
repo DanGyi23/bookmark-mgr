@@ -28,10 +28,11 @@ describe Bookmarks do
     end
   end
 
-  # describe '#delete' do
-  #   it 'deletes a bookmark entry' do
-  #     Bookmarks.delete(title/id)
-  #     expect(bookmarks).not_to include(title/id)
-  #   end
-  # end
+  describe '#delete' do
+    it 'deletes a bookmark entry' do
+      Bookmarks.delete(id: Bookmarks.all.last.id)
+      expect(Bookmarks.all).not_to include(Bookmarks.all.last.id)
+    end
+  end
+  
 end
