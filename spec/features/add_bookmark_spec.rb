@@ -7,5 +7,6 @@ feature "add bookmark" do
     click_button 'Submit'
     click_button 'View Bookmarks'
     expect(page).to have_content "New Bookmark"
+    expect(page).to have_link('New Bookmark', href: 'www.newbookmark.com')
   end
 end
