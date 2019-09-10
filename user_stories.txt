@@ -9,3 +9,15 @@ I want to be able to show a list of my bookmarks
 As a user,
 So I can store a url
 I want to add a bookmark to my bookmark manager
+
+3. Delete a bookmark
+
+As a user,
+So I can remove unwanted bookmarks
+I want to delete existing bookmarks
+
+4. Update bookmarks
+
+As a user,
+So I can correct mistakes in my bookmarks
+I want to update/edit existing bookmarks

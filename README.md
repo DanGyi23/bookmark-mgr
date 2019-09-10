@@ -6,7 +6,21 @@
 As a user,
 So I can see my bookmarks
 I want to be able to show a list of my bookmarks
+
+As a user,
+So I can store a url
+I want to add a bookmark to my bookmark manager
+
+As a user,
+So I can remove unwanted bookmarks
+I want to delete existing bookmarks 
+
+As a user,
+So I can correct mistakes in my bookmarks
+I want to update/edit existing bookmarks
 ```
+
+
 
 #### Domain Models
 
