@@ -37,7 +37,7 @@ attr_reader :id, :title, :url
     else
       conn = PG.connect( dbname: 'bookmark_manager' )
     end
-    conn.exec("DELETE FROM bookmarks WHERE id = #{id}")
+    conn.exec("DELETE FROM bookmarks WHERE id = '#{id.to_s}'")
   end
-  
+
 end
