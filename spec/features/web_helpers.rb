@@ -7,7 +7,13 @@ def delete_db_rows
 end
 
 def add_db_rows
-  Bookmarks.add('http://www.makersacademy.com', "Makers Academy")
-  Bookmarks.add('http://www.google.com', "Google")
-  Bookmarks.add('http://www.bbc.co.uk/sport', "BBC Sport")
+  Bookmarks.add(url: 'http://www.makersacademy.com', title: "Makers Academy")
+  Bookmarks.add(url: 'http://www.google.com', title: "Google")
+  Bookmarks.add(url: 'http://www.bbc.co.uk/sport', title: "BBC Sport")
+end
+
+def persisted_data(id:)
+  connection = PG.connect(dbname: 'bookmark_manager_test')
+  result = connection.query("SELECT * FROM bookmarks WHERE id = #{id};")
+  result.first
 end
