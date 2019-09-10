@@ -3,7 +3,8 @@ require 'features/web_helpers'
 
 describe Bookmarks do
 
-  it 'creates a new bookmark' do
+  describe '#self.add' do
+    it 'creates a new bookmark' do
     bookmark = Bookmarks.add(url: 'http://www.testbookmark.com', title: 'Test Bookmark')
     persisted_data = persisted_data(id: bookmark.id)
 
@@ -11,9 +12,10 @@ describe Bookmarks do
     expect(bookmark.id).to eq persisted_data['id']
     expect(bookmark.title).to eq 'Test Bookmark'
     expect(bookmark.url).to eq 'http://www.testbookmark.com'
+    end
   end
 
-  describe '#all' do
+  describe '#self.all' do
     it 'returns a list of bookmarks' do
       delete_db_rows
       bookmark = Bookmarks.add(url: "http://www.makersacademy.com", title: "Makers Academy")
