@@ -17,4 +17,4 @@ I want to be able to show a list of my bookmarks
 1. Within project directory, connect to psql with command: psql
 2. Create the database with command: CREATE DATABASE bookmark_manager;
 3. Connect to the database using command: \c bookmark_manager;
-4. CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+4. CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60), title VARCHAR(60));
