@@ -1,4 +1,5 @@
 require 'pg'
+require 'bookmarks'
 
 def delete_db_rows
   conn = PG.connect( dbname: 'bookmark_manager_test' )
@@ -6,8 +7,7 @@ def delete_db_rows
 end
 
 def add_db_rows
-  conn = PG.connect( dbname: 'bookmark_manager_test' )
-  conn.exec( "INSERT INTO bookmarks (url) VALUES('http://www.makersacademy.com')" )
-  conn.exec( "INSERT INTO bookmarks (url) VALUES('http://www.google.com')" )
-  conn.exec( "INSERT INTO bookmarks (url) VALUES('http://www.bbc.co.uk/sport')" )
+  Bookmarks.add('http://www.makersacademy.com')
+  Bookmarks.add('http://www.google.com')
+  Bookmarks.add('http://www.bbc.co.uk/sport')
 end
