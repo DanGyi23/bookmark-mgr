@@ -10,7 +10,7 @@ I want to be able to show a list of my bookmarks
 
 #### Domain Models
 
-![](https://github.com/DanGyi23/bookmark-mgr/blob/master/Domain%20Models/domain_model1.png)
+![](https://github.com/DanGyi23/bookmark-mgr/blob/master/domain_models/domain_model1.png)
 
 #### Creating Database
 

@@ -30,5 +30,4 @@ attr_reader :id, :title, :url
      result = conn.exec("INSERT INTO bookmarks (title, url) VALUES('#{title}', '#{url}') RETURNING id, url, title")
      Bookmarks.new(id: result[0]['id'], title: result[0]['title'], url: result[0]['url'])
   end
-  
 end
