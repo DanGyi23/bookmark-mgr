@@ -14,7 +14,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   # post '/delete' do
-  #   Bookmarks.delete(title: params[:bookmark_title]) or do by ID?
+  #   Bookmarks.delete(id: params[:id])
   # end
 
   run! if app_file == $0
