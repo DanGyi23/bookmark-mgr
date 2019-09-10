@@ -7,7 +7,7 @@ def delete_db_rows
 end
 
 def add_db_rows
-  Bookmarks.add('http://www.makersacademy.com')
-  Bookmarks.add('http://www.google.com')
-  Bookmarks.add('http://www.bbc.co.uk/sport')
+  Bookmarks.add('http://www.makersacademy.com', "Makers Academy")
+  Bookmarks.add('http://www.google.com', "Google")
+  Bookmarks.add('http://www.bbc.co.uk/sport', "BBC Sport")
 end
