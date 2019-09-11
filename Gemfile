@@ -6,6 +6,7 @@ ruby '2.6.3'
 gem 'rake'
 gem 'sinatra'
 gem 'pg'
+gem 'sinatra-flash'
 
 group :test do
   gem 'capybara'
