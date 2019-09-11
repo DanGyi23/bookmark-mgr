@@ -7,6 +7,3 @@ feature 'Delete Bookmark' do
     expect(page).not_to have_content("BBC Sport")
   end
 end
-
-    
-    
