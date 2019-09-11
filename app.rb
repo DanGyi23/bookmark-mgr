@@ -18,7 +18,7 @@ class BookmarkManager < Sinatra::Base
     redirect('/')
   end
 
-  patch '/:id' do
+  post '/:id' do
     Bookmarks.update(id: params[:id], url: params[:url], title: params[:title])
     redirect('/')
   end
