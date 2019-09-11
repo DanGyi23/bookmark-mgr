@@ -10,4 +10,8 @@ class DatabaseConnection
     @conn.exec(query_string)
   end
 
+  def self.connection
+    @conn.db
+  end
+
 end

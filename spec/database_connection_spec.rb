@@ -19,4 +19,11 @@ describe DatabaseConnection do
     end
   end
 
+  describe '#connection' do
+    it 'returns the current database connection name' do
+      connection = DatabaseConnection.setup('bookmark_manager_test')
+      expect(DatabaseConnection.connection).to eq('bookmark_manager_test')
+    end
+  end
+
 end
