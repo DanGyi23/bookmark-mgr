@@ -5,7 +5,6 @@ class BookmarkManager < Sinatra::Base
 
   get '/' do
     @bookmarks = Bookmarks.all
-    @bookmarks.each { |bm| puts bm.id }
     erb(:index)
   end
 
