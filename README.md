@@ -28,6 +28,8 @@ I want to update/edit existing bookmarks
 
 #### Creating Database
 
+(Use migrations.sql file)
+
 1. Within project directory, connect to psql with command: psql
 2. Create the database with command: CREATE DATABASE bookmark_manager;
 3. Connect to the database using command: \c bookmark_manager;
